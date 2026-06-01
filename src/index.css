@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #f5f3ff;
+  --color-brand-100: #ede9fe;
+  --color-brand-200: #ddd6fe;
+  --color-brand-400: #a78bfa;
+  --color-brand-500: #8b5cf6;
+  --color-brand-600: #7c3aed;
+  --color-brand-700: #6d28d9;
+
+  --color-surface: #ffffff;
+  --color-surface-2: #f8f7ff;
+  --color-surface-3: #f1f0f7;
+  --color-border: #e5e3f0;
+  --color-border-strong: #c4c0dc;
+
+  --color-text-primary: #1a1733;
+  --color-text-secondary: #5c5880;
+  --color-text-muted: #9896b0;
+
+  --color-sidebar: #fafafe;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f0f7;
+  color: #1a1733;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #c4c0dc transparent;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #c4c0dc;
+  border-radius: 4px;
+}
+
+/* React Flow overrides */
+.react-flow__renderer { background: #f1f0f7; }
+.react-flow__edge-path { stroke: #7c3aed; stroke-width: 2; }
+.react-flow__handle {
+  background: #7c3aed !important;
+  border: 2px solid #ffffff !important;
+  width: 10px !important;
+  height: 10px !important;
+  box-shadow: 0 0 0 2px #7c3aed !important;
+}
+.react-flow__controls {
+  background: #ffffff !important;
+  border: 1px solid #e5e3f0 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+  overflow: hidden;
+}
+.react-flow__controls button {
+  background: #ffffff !important;
+  border-bottom: 1px solid #f1f0f7 !important;
+  color: #5c5880 !important;
+}
+.react-flow__controls button:hover {
+  background: #f5f3ff !important;
+  color: #7c3aed !important;
+}
+.react-flow__minimap {
+  background: #ffffff !important;
+  border: 1px solid #e5e3f0 !important;
+  border-radius: 10px !important;
+}
+.react-flow__background { background-color: #f1f0f7; }
+.react-flow__attribution { display: none; }
