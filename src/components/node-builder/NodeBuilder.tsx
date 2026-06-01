@@ -13,6 +13,7 @@ import ReactFlow, {
   BackgroundVariant,
   MarkerType,
 } from 'reactflow'
+// @ts-ignore
 import 'reactflow/dist/style.css'
 import { ArrowLeft, Plus, Eye, Download, MessageSquare, X, Send, CheckCheck } from 'lucide-react'
 import { useStore } from '../../store'
@@ -119,7 +120,7 @@ function CommentPanel({ trainingId, onClose }: { trainingId: string; onClose: ()
 }
 
 export default function NodeBuilder() {
-  const { trainings, activeTrainingId, addScene, addNode, updateNode, deleteNode, setView } = useStore()
+  const { trainings, activeTrainingId, addScene, addNode, updateNode, setView } = useStore()
   const training = trainings.find((t) => t.id === activeTrainingId)
   const [showComments, setShowComments] = useState(false)
   const nodeIdCounter = useRef(Date.now())

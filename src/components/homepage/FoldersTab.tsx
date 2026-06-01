@@ -53,7 +53,7 @@ export default function FoldersTab() {
                 key={c}
                 onClick={() => setNewColor(c)}
                 className={`w-5 h-5 rounded-full transition-transform ${newColor === c ? 'scale-125 ring-2 ring-offset-2' : ''}`}
-                style={{ background: c, ringColor: c }}
+                style={{ background: c, '--tw-ring-color': c } as React.CSSProperties}
               />
             ))}
           </div>

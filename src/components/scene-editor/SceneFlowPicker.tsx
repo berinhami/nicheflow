@@ -4,6 +4,7 @@ import ReactFlow, {
   useNodesState, useEdgesState, type Connection,
   MarkerType, BackgroundVariant,
 } from 'reactflow'
+// @ts-ignore
 import 'reactflow/dist/style.css'
 import { X, MapPin } from 'lucide-react'
 import type { Scene } from '../../types'
